@@ -3,12 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing NGINX - echo apt-get install NGINX
-
-   build:
+      - echo " Hello World"
+  build:
     commands:
-      - echo Build started on date`
-
-  post_build:
-    commands:
-      - echo Configuring NGINX
+      - echo "Hello world
+artifacts:
+  files:
+    - '**/*'
