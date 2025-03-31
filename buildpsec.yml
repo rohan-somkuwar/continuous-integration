@@ -6,7 +6,7 @@ phases:
       - echo " Hello World"
   build:
     commands:
-      - echo "Hello world
+      - echo "Hello world"
 artifacts:
   files:
     - '**/*'
