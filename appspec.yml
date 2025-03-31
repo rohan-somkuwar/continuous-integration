@@ -3,7 +3,8 @@ os: linux
 hooks:
   BeforeInstall:
     - location: Scripts/UnzipResourceBundle.sh
+      runas: root
   AfterInstall:
     - location: Scripts/RunResourceTests.sh
       timeout: 180
-      runas: codedeployuser
+      runas: root
