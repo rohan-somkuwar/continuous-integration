@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 hooks:
   BeforeInstall:
-    - location: Scripts/UnzipResourceBundle.sh
+    - location: Scripts/before.sh
       runas: root
   AfterInstall:
-    - location: Scripts/RunResourceTests.sh
+    - location: Scripts/after.sh
       timeout: 180
       runas: root
